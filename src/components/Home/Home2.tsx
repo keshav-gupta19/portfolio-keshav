@@ -4,12 +4,10 @@ import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import codeforces from "../../assets/codeforces.svg";
 import leetcode from "../../assets/leetcod.svg";
-import Particle from "../Particle";
 const Home2 = () => {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Particle />
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6rem" }}>

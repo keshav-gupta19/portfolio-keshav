@@ -4,11 +4,9 @@ import laptopImg from "../../assets/about2.png";
 import TechStack from "./TechStack";
 import ToolStack from "./ToolStack";
 import Github from "./Github";
-import Particle from "../Particle";
 const About = () => {
   return (
     <Container fluid className="about-section">
-      <Particle />
       <Container>
         <Row>
           <Col
