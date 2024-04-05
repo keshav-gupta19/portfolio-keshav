@@ -1,11 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ProjectCards from "./ProjectCards";
-import docman from "../../assets/Projects/Screenshot (225).png";
-import financer from "../../assets/Projects/Financer.jpg";
-import travelMap from "../../assets/Projects/TravelMap.jpg";
-import dailyjournal from "../../assets/Projects/DailyJournal.jpg";
-import todolist from "../../assets/Projects/ToDoList.jpg";
-import dicegame from "../../assets/Projects/DiceGame.jpg";
+import docman from "../../assets/Projects/docmanImgUpdated.jpg";
+import financer from "../../assets/Projects/FinancerimgUpdated.jpg";
+import travelMap from "../../assets/Projects/travelmapImgUpdated.jpg";
+import dailyjournal from "../../assets/Projects/blogimgupated.jpg";
+import todolist from "../../assets/Projects/todoImgUpdated.jpg";
+import castwave from "../../assets/Projects/castwaveimgUpdated.jpg";
 const Projects = () => {
   return (
     <Container fluid className="project-section">
@@ -19,6 +19,17 @@ const Projects = () => {
 
         {/* Docman */}
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCards
+              imgPath={castwave}
+              isBlog={false}
+              title="CastWave - Your Gateway to Seamless Podcasting Pleasure"
+              description="
+              Introducing CastWave, your ultimate destination for immersive podcasting enjoyment! At the helm of its creation, we've crafted an intuitive app experience that simplifies onboarding and authentication, ensuring seamless access to your favorite content. With our versatile content playback, dive into a world of audio and video podcasts, enriching your listening journey like never before. But that's not all - we've put you at the center with user-centric features, empowering effortless upload, editing, and management of your very own podcasts, fostering boundless creativity. Join us on CastWave and redefine your podcasting experience today!"
+              ghLink="https://github.com/keshav-gupta19/CastWave"
+              demoLink="https://castwave.netlify.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCards
               imgPath={docman}
@@ -76,16 +87,6 @@ const Projects = () => {
             />
           </Col>
           {/* Dice Game */}
-          <Col md={4} className="project-card">
-            <ProjectCards
-              imgPath={dicegame}
-              isBlog={false}
-              title="Diceer - A fun game"
-              description="Dicer is a straightforward two-player game created with HTML, CSS, and JavaScript. Each player rolls a virtual dice, and the player with the higher score wins. The game is designed to be user-friendly and easy to understand, providing a quick and enjoyable gaming experience for all."
-              ghLink="https://github.com/keshav-gupta19/Dice-Game"
-              demoLink=""
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
